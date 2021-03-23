@@ -5,8 +5,8 @@
 
 {%block content%}
     <div class="row text-center">
-        <h1 class="trajan title slide-in-elliptic-top-fwd">Dota 2 Items Guide</h2>
-            <h3 class="trajan subtitle tracking-in-expand-fwd-top">Items that do what you need.</h4>
+        <h1 class="trajan title ">Dota 2 Items Guide</h2>
+            <h3 class="trajan subtitle ">Items that do what you need.</h4>
     </div>
     <div class="row mt-4">
         <form method="post">
@@ -17,16 +17,34 @@
             </div>
         </form>
     </div>
-    {% if items%}
-        <div class="row d-flex flex-row items mt-3">
+    {% if items %}
+        <div class="row d-flex flex-row items mt-3 justify-content-center">
             {% for item in items %}
-                <div class="card item mb-2" style="width: 10rem;">
-                    <img src="https://api.opendota.com{{item.img}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h6 class="card-title text-center">{{ item.dname }}</h5>
+                {% if not item.tier %}
+                    <div class="card item mb-2" style="width: 10rem;">
+                        <img src="https://api.opendota.com{{item.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">{{ item.dname }}</h5>
+                        </div>
                     </div>
-                </div>
+                {% endif %}
             {% endfor %}
         </div>
-    {% endif %}
+        <div class="row">
+            <h3 class="trajan subtitle text-center">Neutral Items</h3>
+        </div>
+        <div class="row d-flex flex-row items mt-3 justify-content-center">
+            {% for item in items%}
+                {% if item.tier %}
+                    <div class="card item mb-2" style="width: 10rem;">
+                        <img src="https://api.opendota.com{{item.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">{{ item.dname }}</h5>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row d-flex flex-row mt-3 justify-content-center"><a href="/" style="width: fit-content;"><button class="btn btn-danger">Reset</button></a></div>
+    {% endif %} 
 {%endblock%}

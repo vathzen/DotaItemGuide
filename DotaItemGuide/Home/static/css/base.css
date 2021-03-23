@@ -4,7 +4,8 @@
 }
 
 body{
-    background: url('../background.jfif');
+    /* background-color: rgb(25, 18, 22); */
+    background: url('../background.jfif') no-repeat, rgb(25, 12, 25);
 }
 
 .trajan{
@@ -12,6 +13,14 @@ body{
 }
 
 .fh{
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 95vh;
+}
+
+.footer{
+    width: 100%;
+    color: gray;
+}
+
+.footer a {
+    text-decoration: none;
 }

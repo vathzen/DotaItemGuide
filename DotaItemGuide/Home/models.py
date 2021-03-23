@@ -17,6 +17,7 @@ class Item(models.Model):
     created = models.BooleanField()
     charges = models.CharField(max_length=10)
     attrib = models.JSONField()
+    # attrib = models.CharField(max_length=200)
     #rare
     desc = models.CharField(max_length=10,null=True)
     tier = models.IntegerField(null=True)

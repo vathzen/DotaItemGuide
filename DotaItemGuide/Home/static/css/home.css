@@ -30,11 +30,13 @@
 }
 
 .item{
+        background-color: #181a1b !important;
 	border-radius: 1rem !important;
 	margin-right: 10px;
 	margin-left: 10px;
 	padding-top: 5px;
 	word-wrap: normal;
+        color: white;
 }
 
 /* ----------------------------------------------
