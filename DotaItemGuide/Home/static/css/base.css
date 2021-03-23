@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'Trajan Pro';
+    src: url('../TrajanPro.ttf');
+}
+
+body{
+    background: url('../background.jfif');
+}
+
+.trajan{
+    font-family: 'Trajan Pro';
+}
+
+.fh{
+    min-height: 100vh;
+    height: 100vh;
+}
