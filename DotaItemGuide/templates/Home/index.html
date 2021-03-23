@@ -1,1 +1,13 @@
-<h1>Hiii</h1>
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %} <link rel="stylesheet" href="{% static 'css/home.css' %}"> {% endblock %}
+
+{%block content%}
+    <div class="row text-center">
+        <h2 class="trajan title slide-in-elliptic-top-fwd">Dota 2 Items Guide</h2>
+        <h4 class="trajan subtitle tracking-in-expand-fwd-top">Items that do what you need.</h4>
+    </div>
+    <div class="row">
+        
+    </div>
+{%endblock%}
