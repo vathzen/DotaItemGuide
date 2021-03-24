@@ -1,0 +1,26 @@
+@font-face{
+    font-family: 'Trajan Pro';
+    src: url('../TrajanPro.ttf');
+}
+
+body{
+    /* background-color: rgb(25, 18, 22); */
+    background: url('../background.jfif') no-repeat, rgb(25, 12, 25);
+}
+
+.trajan{
+    font-family: 'Trajan Pro';
+}
+
+.fh{
+    min-height: 95vh;
+}
+
+.footer{
+    width: 100%;
+    color: gray;
+}
+
+.footer a {
+    text-decoration: none;
+}
